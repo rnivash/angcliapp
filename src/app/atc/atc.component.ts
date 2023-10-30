@@ -3,18 +3,20 @@ import { Section } from '../model/db';
 
 @Component({
   selector: 'atc',
-  templateUrl: './atc.component.html',
-  styleUrls: ['./atc.component.scss']
+  templateUrl: './atc.component.html'
 })
 export class AtcComponent {
 
   @Input()
   sections : Section[] = [];
 
+  @Input()
+  ordercode?: string;
+
   selectionState?: string 
 
   addtocart() : void{
-    this.selectionState = '';
+    this.selectionState = `Item added to the cart ${this.ordercode}`;
     this.sections.forEach(s => {
       s.modules.forEach(m => {
         this.selectionState += `${m.name}{`;
