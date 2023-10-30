@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import { Section } from '../model/db';
-import { ConfiguratorService } from '../configurator.service';
+import { ConfiguratorService } from '../services/configurator.service';
 
 @Component({
   selector: 'app-configurator',
@@ -20,8 +20,6 @@ export class ConfiguratorComponent {
     this.sections = [];
   }
 
-
-
   ngOnInit(){
     let oc = this.route.snapshot.paramMap.get("ordercode") ;
     this.service.getSection(oc).subscribe((data) => {
@@ -29,8 +27,7 @@ export class ConfiguratorComponent {
       this.sections.forEach(s =>{
         console.log(s);
       })
-      
-      });
-      
+    });      
   }
+  
 }

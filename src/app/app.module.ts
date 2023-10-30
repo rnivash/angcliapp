@@ -7,11 +7,12 @@ import { OptionComponent } from './option/option.component';
 import { SectionComponent } from './section/section.component';
 import { AtcComponent } from './atc/atc.component'
 
-import { ConfiguratorService } from './configurator.service';
+import { ConfiguratorService } from './services/configurator.service';
 
 import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BrowserModule } from '@angular/platform-browser';
     ModuleComponent,
     OptionComponent,
     SectionComponent,
-    AtcComponent
+    AtcComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
