@@ -1,0 +1,5 @@
+<div class="conf-section" data-id="{{section.id}}" 
+ *ngFor="let section of sections" >
+    <span class="title">{{section.name}}</span>
+    <module [modules]="section.modules"></module>
+</div>  

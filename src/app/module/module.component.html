@@ -1,0 +1,6 @@
+<ul [ngStyle]="{'list-style-type': 'none', 'padding':'0px'}" class="conf-module">
+    <li *ngFor="let m of modules">
+        <span class="title">{{m.name}}</span>
+        <conf-option *ngIf="m.options.length > 0" [options]="m.options" [module]="m"></conf-option>
+    </li>
+</ul>

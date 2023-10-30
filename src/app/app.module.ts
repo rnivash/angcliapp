@@ -1,18 +1,41 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
+import { ConfiguratorComponent } from './configurator/configurator.component';
+import { appComponent } from './app.component'
+import { ModuleComponent } from './module/module.component';
+import { OptionComponent } from './option/option.component';
+import { SectionComponent } from './section/section.component';
+import { AtcComponent } from './atc/atc.component'
+
+import { ConfiguratorService } from './configurator.service';
+
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
-    AppComponent
+    appComponent,
+    ConfiguratorComponent,
+    ModuleComponent,
+    OptionComponent,
+    SectionComponent,
+    AtcComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    ConfiguratorService,
+   
+  ],
+  bootstrap: [
+    appComponent
+  ]
 })
-export class AppModule { }
+export class AppModule 
+{ 
+  
+}

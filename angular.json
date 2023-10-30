@@ -18,8 +18,8 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/angcliapp",
-            "index": "src/index.html",
-            "main": "src/main.ts",
+            "index": "src/productdetail.html",
+            "main": "src/script-main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -68,7 +68,8 @@
               "browserTarget": "angcliapp:build:production"
             },
             "development": {
-              "browserTarget": "angcliapp:build:development"
+              "browserTarget": "angcliapp:build:development",
+              "proxyConfig": "proxy.conf.js"
             }
           },
           "defaultConfiguration": "development"
@@ -100,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "610db447-4bf3-4aab-85eb-9d37dc58bf93"
   }
 }
