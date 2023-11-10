@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Section } from '../model/db';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'atc',
@@ -15,6 +16,10 @@ export class AtcComponent {
 
   selectionState?: string 
 
+  constructor(private router:Router){
+
+  }
+
   addtocart() : void{
     this.selectionState = `Item added to the cart ${this.ordercode}`;
     this.sections.forEach(s => {
@@ -28,6 +33,10 @@ export class AtcComponent {
         this.selectionState += `}`;
       });
     });
+
+    this.router.navigateByUrl("/cart")
+
+
   }
 
 }
