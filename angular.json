@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/angcliapp",
-            "index": "src/main.html",
+            "index":{ "input": "src/main.html"},
             "main": "src/script-main.ts",
             "polyfills": [
               "zone.js"
