@@ -9,7 +9,7 @@
 <div class="container">
     <div class="row" *ngFor="let p of products">
       <div class="col">
-        <img (click)="selectProduct(p.id)" src="/assets/{{p.image}}.webp"
+        <img (click)="selectProduct(p.id)" src="assets/{{p.image}}.webp"
         class="p-3" [ngStyle]="{cursor: 'pointer'}"  width="500px"  alt="...">
       </div>  
       <div class="col">        
