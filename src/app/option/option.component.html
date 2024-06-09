@@ -1,8 +1,0 @@
-<ul [ngStyle]="{'list-style-type': 'none'}">
-    <li  *ngFor="let op of options" >
-        <span [ngClass]="{'selected' : op.selected, 'conf-option': true}" (click)="selected(op)">
-            {{op.name}}
-        </span>
-    </li>
-</ul>
-
