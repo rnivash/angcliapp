@@ -68,7 +68,6 @@
             },
             "development": {
               "browserTarget": "angcliapp:build:development",
-              "proxyConfig": "proxy.conf.js"
             }
           },
           "defaultConfiguration": "development"
