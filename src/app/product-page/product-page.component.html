@@ -1,19 +1,26 @@
-<div class="container">
-  <div class="row">
-    <div class="col-6"><img src="https://www.tvsmotor.com/tvs-sport/-/media/Brand-Pages-Webp/TVS-Sport/TVS-Sport-Starlight-Blue-700x500/11.png" alt="Two-Wheeler" /></div>
-    <div class="col-6"><h1>{{ product.name }}</h1>
-      <p>{{ product.description }}</p>
-      <h3>Price: {{ product.price | currency: 'INR' }}</h3>
-      <div class="specifications">
-        <h4>Specifications:</h4>
-        <ul>
-          <li>Engine: {{ product.specs.engine }}</li>
-          <li>Fuel Type: {{ product.specs.fuelType }}</li>
-          <li>Mileage: {{ product.specs.mileage }}</li>
-          <li>Top Speed: {{ product.specs.topSpeed }} km/h</li>
-        </ul>
-      </div> 
-      <a href="https://www.tvsmotor.com/book-online/select-variant?111&utm_campaign=ootru-in&utm_content=ootru-in&utm_medium=ootru-in&utm_source=ootru-in" class="btn btn-success">Buy Now</a>
+<div class="container mt-4">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h2 class="card-title">{{ currentProduct?.name }}</h2>
+      <p class="card-text">{{ currentProduct?.description }}</p>
+
+      <div class="d-flex justify-content-between mt-4">
+        <button
+          class="btn btn-outline-primary"
+          (click)="goToPreviousProduct()"
+          [disabled]="!hasPreviousProduct()"
+        >
+          Previous
+        </button>
+
+        <button
+          class="btn btn-outline-primary"
+          (click)="goToNextProduct()"
+          [disabled]="!hasNextProduct()"
+        >
+          Next
+        </button>
+      </div>
     </div>
   </div>
 </div>

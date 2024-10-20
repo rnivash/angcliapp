@@ -1,6 +1,9 @@
 import { CurrencyPipe } from '@angular/common';
-import { Component } from '@angular/core';
-
+import { Component, OnInit , Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Bike } from '../bike';
+import {BikeListService} from '../bike-list.service'
+import { IProduct } from '../iproduct';
 @Component({
   selector: 'app-product-page',
   templateUrl: './product-page.component.html',
@@ -8,17 +11,58 @@ import { Component } from '@angular/core';
   imports: [CurrencyPipe],
   standalone: true
 })
+export class ProductPageComponent implements OnInit {
 
-export class ProductPageComponent {
-  product = {
-    name: 'TVS Sport',
-    description: 'Powered by a 109.7cc, single-cylinder, air-cooled engine, TVS Sport BS6 offers a Behtareen mileage It provides 15% more mileage with its ETFI Technology. The engine is tuned to offer a balance of power and fuel efficiency, making it an ideal choice for daily commuting. ',
-    price: 80993,
-    specs: {
-      engine: '300cc',
-      fuelType: 'Petrol',
-      mileage: '35 km/l',
-      topSpeed: 180
+  products : IProduct[] = [];
+
+  currentProductId!: number;
+
+  currentProduct!: Bike|undefined;
+
+  constructor(private route: ActivatedRoute, private router: Router) {
+    this.products = new BikeListService().getBikes();
+  }
+
+  @Input()
+  set id(id: number) {  
+    this.currentProductId = typeof id === 'string' ? parseInt(id, 10) : id;
+    this.currentProduct =  this.products.find(product => product.id == id) as Bike;
+    console.log('Current Product ID:', this.currentProductId);
+  }
+
+  ngOnInit(): void {
+
+  }
+
+  goToNextProduct(): void {
+    const currentIndex = this.products.findIndex(product => product.id === this.currentProductId);
+    if (currentIndex !== -1 && currentIndex < this.products.length - 1) {
+      const nextProductId = this.products[currentIndex + 1].id;
+      this.router.navigate(['/product', nextProductId]);
     }
-  };
+  }
+
+  goToPreviousProduct(): void {
+    const currentIndex = this.products.findIndex(product => product.id === this.currentProductId);
+    if (currentIndex > 0) {
+      const previousProductId = this.products[currentIndex - 1].id;
+      this.router.navigate(['/product', previousProductId]);
+    }
+  }
+
+  hasNextProduct(): boolean {
+    const currentIndex = this.products.findIndex(product => product.id === this.currentProduct?.id);
+    return currentIndex < this.products.length - 1;
+  }
+  
+  hasPreviousProduct(): boolean {
+    const currentIndex = this.products.findIndex(product => product.id === this.currentProduct?.id);
+    return currentIndex > 0;
+  }
+  
+  
 }
+
+
+
+
