@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "docs",
             "index":{ "input": "src/index.html"},
@@ -25,13 +25,17 @@
             ],
             "tsConfig": "tsconfig.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/CNAME"],
+            "assets": ["src/CNAME", "src/assets"],
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ]
+            ],
+            "customWebpackConfig":{
+              "path": "./extra-webpack.config.js",
+              "mergeRules": {"externals": "replace" }
+            }
           },
           "configurations": {
             "production": {
@@ -61,7 +65,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "angcliapp:build:production"

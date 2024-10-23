@@ -1,26 +1,53 @@
 <div class="container mt-4">
-  <div class="card shadow-sm">
-    <div class="card-body">
-      <h2 class="card-title">{{ currentProduct?.name }}</h2>
-      <p class="card-text">{{ currentProduct?.description }}</p>
-      <img _ngcontent-ng-c117342000="" src="https://www.tvsmotor.com/tvs-sport/-/media/Brand-Pages-Webp/TVS-Sport/TVS-Sport-Starlight-Blue-700x500/11.png" alt="Two-Wheeler">
-      <div class="d-flex justify-content-between mt-4">
-        <button
-          class="btn btn-outline-primary"
-          (click)="goToPreviousProduct()"
-          [disabled]="!hasPreviousProduct()"
-        >
-          Previous
-        </button>
-
-        <button
-          class="btn btn-outline-primary"
-          (click)="goToNextProduct()"
-          [disabled]="!hasNextProduct()"
-        >
-          Next
-        </button>
-      </div>
+  <div class="row">
+    <!-- Product Image -->
+    <div class="col-md-6">
+      <img [src]="currentProduct?.image" alt="{{ currentProduct?.name }}" class="img-fluid">
     </div>
+
+    <!-- Product Details -->
+    <div class="col-md-6">
+      <h2>{{ currentProduct?.name }}</h2>
+      <p>{{ currentProduct?.description }}</p>
+
+      <table class="table table-bordered mt-4">
+        <tbody>
+          <tr>
+            <th scope="row">Price</th>
+            <td>{{ currentProduct?.price | currency }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Engine Capacity (cc)</th>
+            <td>{{ currentProduct?.cc }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Torque</th>
+            <td>{{ currentProduct?.torque }} Nm @ {{ currentProduct?.torqueRpm }} RPM</td>
+          </tr>
+          <tr>
+            <th scope="row">Max Power</th>
+            <td>{{ currentProduct?.maxPower }} HP @ {{ currentProduct?.maxPowerRpm }} RPM</td>
+          </tr>
+          <tr>
+            <th scope="row">Top Speed</th>
+            <td>{{ currentProduct?.speed }} km/h</td>
+          </tr>
+          <tr>
+            <th scope="row">Gears</th>
+            <td>{{ currentProduct?.gear }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Fuel Tank Capacity</th>
+            <td>{{ currentProduct?.tankCapacity }} liters</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Next and Previous Buttons -->
+  <div class="mt-4 text-center">
+    <button class="btn btn-primary" [disabled]="!hasPreviousProduct()" (click)="goToPreviousProduct()">Previous</button>
+    <button class="btn btn-primary" [disabled]="!hasNextProduct()" (click)="goToNextProduct()">Next</button>
   </div>
 </div>
