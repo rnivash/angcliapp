@@ -2,7 +2,7 @@ module.exports = {
     module: {
       rules: [
         {
-          test: /\.ya?ml$/,
+          test: /\.yaml$/,
           use: 'yaml-loader'
         }
       ]

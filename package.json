@@ -4,9 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 44440",
-    "build": "ng build --configuration production && copy docs\\index.html docs\\404.html",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "dev:ssr": "ng run angcliapp:serve-ssr",
+    "serve:ssr": "node dist/angcliapp/server/main.js",
+    "build:ssr": "ng build && ng run angcliapp:server",
+    "prerender": "ng run angcliapp:prerender",
+    "deploy": "rm -rf docs && mkdir docs && cp ./dist/angcliapp/browser/* ./docs/ -r && cp ./docs/index.html ./docs/404.html"
   },
   "private": true,
   "dependencies": {
@@ -17,8 +22,11 @@
     "@angular/forms": "^16.2.0",
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
+    "@angular/platform-server": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@nguniversal/express-engine": "^16.2.0",
     "bootstrap": "^5.3.2",
+    "express": "^4.15.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -28,7 +36,10 @@
     "@angular-devkit/build-angular": "^16.2.7",
     "@angular/cli": "^16.2.7",
     "@angular/compiler-cli": "^16.2.0",
+    "@nguniversal/builders": "^16.2.0",
+    "@types/express": "^4.17.0",
     "@types/jasmine": "~4.3.0",
+    "@types/node": "^16.11.7",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

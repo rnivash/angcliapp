@@ -16,9 +16,27 @@ products:
   - id: 2
     name: "Radeon"
     description: "TVS Radeon"
+    price: 100
+    cc: 160
+    torque: 18
+    torqueRpm: 1800
+    maxPower: 19
+    maxPowerRpm: 1900
+    speed: 120
+    gear: 5
+    tankCapacity: 12
     image: https://www.tvsmotor.com/tvs-radeon/-/media/Brand-Pages-Webp/Radeon/web/360/DIGI-Cluster/DT-Blue-Black/14.png
 
   - id: 3
     name: "Raider"
     description: "Description of Product 3"
-    image: https://www.tvsmotor.com/tvs-raider/-/media/TVSv2/Brand-Pages/Raider2/360View/Split-Seat/Bike-Yellow/18.webp
+    price: 100
+    cc: 160
+    torque: 18
+    torqueRpm: 1800
+    maxPower: 19
+    maxPowerRpm: 1900
+    speed: 120
+    gear: 5
+    tankCapacity: 12
+    image: https://www.tvsmotor.com/tvs-raider/-/media/TVSv2/Brand-Pages/Raider2/360View/super-squad-edition/SSE/Black-panther/15.webp
