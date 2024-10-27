@@ -1,42 +1,42 @@
 products:
   - id: 1
-    name: "Sport"
-    description: "Description of Product 1"
-    price: 100
-    cc: 160
-    torque: 18
-    torqueRpm: 1800
-    maxPower: 19
-    maxPowerRpm: 1900
-    speed: 120
-    gear: 5
-    tankCapacity: 12
+    name: "TVS Sport"
+    description: "Powered by a 109.7cc, single-cylinder, air-cooled engine, TVS Sport BS6 offers a Behtareen mileage It provides 15% more mileage with its  ETFI Technology. The engine is tuned to offer a balance of power and fuel efficiency, making it an ideal choice for daily commuting."
+    price: 84300
+    cc: 110
+    torque: 8.7
+    torqueRpm: 4500
+    maxPower: 6.03
+    maxPowerRpm: 7350
+    speed: 90
+    gear: 4
+    tankCapacity: 10
     image: https://www.tvsmotor.com/tvs-sport/-/media/Brand-Pages-Webp/TVS-Sport/TVS-Sport-Starlight-Blue-700x500/11.png
 
   - id: 2
     name: "Radeon"
-    description: "TVS Radeon"
-    price: 100
-    cc: 160
-    torque: 18
-    torqueRpm: 1800
-    maxPower: 19
-    maxPowerRpm: 1900
-    speed: 120
-    gear: 5
-    tankCapacity: 12
+    description: "Read more about TVS Radeon specifications and features such as mileage, 109.7cc engine, 10L fuel tank capacity, and other technical specs."
+    price: 89544
+    cc: 110
+    torque: 8.7
+    torqueRpm: 4500
+    maxPower: 6.03
+    maxPowerRpm: 7350
+    speed: 90
+    gear: 4
+    tankCapacity: 10
     image: https://www.tvsmotor.com/tvs-radeon/-/media/Brand-Pages-Webp/Radeon/web/360/DIGI-Cluster/DT-Blue-Black/14.png
 
   - id: 3
     name: "Raider"
-    description: "Description of Product 3"
-    price: 100
-    cc: 160
-    torque: 18
-    torqueRpm: 1800
-    maxPower: 19
-    maxPowerRpm: 1900
-    speed: 120
+    description: "Go wicked with distinct sporty styling, best in class performance and high-tech advanced features"
+    price: 116156
+    cc: 125
+    torque: 11.2
+    torqueRpm: 6000
+    maxPower: 8.37
+    maxPowerRpm: 7500
+    speed: 110
     gear: 5
-    tankCapacity: 12
+    tankCapacity: 10
     image: https://www.tvsmotor.com/tvs-raider/-/media/TVSv2/Brand-Pages/Raider2/360View/super-squad-edition/SSE/Black-panther/15.webp
