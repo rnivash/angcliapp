@@ -1,0 +1,21 @@
+<div class="card">
+    <img [src]="currentProduct?.image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ currentProduct?.name }}</h5>
+      <p class="card-text">{{ currentProduct?.description }}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{ currentProduct?.price | currency: "INR" }}</li>
+      <li class="list-group-item">{{ currentProduct?.cc }} CC</li>
+      <li class="list-group-item">{{ currentProduct?.torque }} Nm &#64; {{ currentProduct?.torqueRpm }} RPM</li>
+      <li class="list-group-item">{{ currentProduct?.maxPower }} HP &#64;{{ currentProduct?.maxPowerRpm }} RPM</li>
+      <li class="list-group-item">{{ currentProduct?.speed }} km/h</li>
+      <li class="list-group-item">{{ currentProduct?.gear }}</li>
+      <li class="list-group-item">{{ currentProduct?.tankCapacity }} liters</li>
+    </ul>
+    <div class="card-body">
+      <button type="button" class="btn btn-success">Buy Now</button>
+      <!-- <button href="#" [disabled]="!hasPreviousProduct()" (click)="goToPreviousProduct()" class="card-link">Previous</button>
+      <button href="#" [disabled]="!hasNextProduct()" (click)="goToNextProduct()" class="card-link">Next</button> -->
+    </div>
+  </div>

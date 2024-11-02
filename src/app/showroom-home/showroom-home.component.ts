@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductPageComponent } from '../product-page/product-page.component';
+import { PricePageComponent } from '../price-page/price-page.component';
 
 @Component({
   selector: 'app-showroom-home',
   standalone: true,
-  imports: [CommonModule, ProductPageComponent],
+  imports: [CommonModule, PricePageComponent],
   templateUrl: './showroom-home.component.html',
   styleUrls: ['./showroom-home.component.scss']
 })
