@@ -144,9 +144,7 @@
           "builder": "@nguniversal/builders:prerender",
           "options": {
             "routes": [
-              "/product/1",
-              "/product/2",
-              "/product/3"
+              "/price"
             ]
           },
           "configurations": {

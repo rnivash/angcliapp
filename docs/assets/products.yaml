@@ -11,6 +11,7 @@ products:
     speed: 90
     gear: 4
     tankCapacity: 10
+    isHidden: false
     image: https://www.tvsmotor.com/tvs-sport/-/media/Brand-Pages-Webp/TVS-Sport/TVS-Sport-Starlight-Blue-700x500/11.png
 
   - id: 2
@@ -25,6 +26,7 @@ products:
     speed: 90
     gear: 4
     tankCapacity: 10
+    isHidden: false
     image: https://www.tvsmotor.com/tvs-radeon/-/media/Brand-Pages-Webp/Radeon/web/360/DIGI-Cluster/DT-Blue-Black/14.png
 
   - id: 3
@@ -39,4 +41,5 @@ products:
     speed: 110
     gear: 5
     tankCapacity: 10
+    isHidden: false
     image: https://www.tvsmotor.com/tvs-raider/-/media/TVSv2/Brand-Pages/Raider2/360View/super-squad-edition/SSE/Black-panther/15.webp
