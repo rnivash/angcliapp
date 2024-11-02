@@ -1,15 +1,13 @@
 import { Routes } from '@angular/router';
 import { PageNotfoundComponent } from './page-notfound/page-notfound.component'
-import { ShowroomHomeComponent } from './showroom-home/showroom-home.component';
 import { PricePageComponent } from './price-page/price-page.component';
-import { ProductComponent } from './product/product.component';
+import { ProductPageComponent } from './product-page/product-page.component';
 
 
 export const routes: Routes = [
-    { path: 'product/:id', component: ProductComponent },
+    { path: 'product/:id', component: ProductPageComponent },
     { path: 'price', component: PricePageComponent },
-    { path: 'redirect', redirectTo: '/product/2', pathMatch: 'full' },
-    { path: '', component: ShowroomHomeComponent },
+    { path: '', redirectTo: '/price', pathMatch: 'full' },
     { path: '**', component: PageNotfoundComponent  }
   ];
 

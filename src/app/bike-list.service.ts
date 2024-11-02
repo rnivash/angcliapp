@@ -17,4 +17,8 @@ export class BikeListService {
   public getBikeById(id: number): IProduct {
     return productsData.products.find((product: Bike) => product.id === id) as IProduct;
   }
+
+  public getBikeByName(name: string): IProduct {
+    return productsData.products.find((product: Bike) => product.name === name) as IProduct;
+  }
 }

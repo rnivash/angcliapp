@@ -15,9 +15,15 @@ export class PricePageComponent {
 
   products : IProduct[] = [];
 
-  constructor() {
-    this.products = new BikeListService().getBikes();
+  constructor(private bikeListService: BikeListService) {
+    this.products = this.bikeListService.getBikes();
   }
+
+  loadMore(): void {
+    this.products = this.products.concat(this.bikeListService.getBikes());    
+  }
+
+
 
 
 }
