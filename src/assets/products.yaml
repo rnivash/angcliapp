@@ -112,9 +112,9 @@ products:
     image: https://www.tvsmotor.com/tvs-apache/-/media/Brand-Pages/Apache/Price/200-4V.png
 
   - id: 8
-    name: "Hornet2-0"
+    name: "Hornet 2"
     description: "The all-new Hornet 2.0 is all about letting people live their dream. The fierce machine keeps you ahead of others. It is a manifestation of style, safety and power. It turns heads and converts the road into a steady blur in seconds. It’s pure exhilaration at a flick of your wrist."
-    price: 140451
+    price: 180968
     cc: 185
     torque: 15.9  
     torqueRpm: 6000
@@ -128,9 +128,89 @@ products:
     image: https://www.honda2wheelersindia.com/assets/images/CBHornetBS_6/360/22.png
 
   - id: 9
-    name: "SP160"
+    name: "SP 160"
     description: "The all-new Hornet 2.0 is all about letting people live their dream. The fierce machine keeps you ahead of others. It is a manifestation of style, safety and power. It turns heads and converts the road into a steady blur in seconds. It’s pure exhilaration at a flick of your wrist."
-    price: 123351
+    price: 154853
+    cc: 163
+    torque: 14.58
+    torqueRpm: 5500
+    maxPower: 9.9
+    maxPowerRpm: 7500
+    speed: 127
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: "https://www.honda2wheelersindia.com/BookNow?sp-160"
+    image: https://www.honda2wheelersindia.com/assets/images/sp160/gallery_sp160/22.png
+
+  - id: 9
+    name: "SP 160"
+    description: "The all-new Hornet 2.0 is all about letting people live their dream. The fierce machine keeps you ahead of others. It is a manifestation of style, safety and power. It turns heads and converts the road into a steady blur in seconds. It’s pure exhilaration at a flick of your wrist."
+    price: 154853
+    cc: 163
+    torque: 14.58
+    torqueRpm: 5500
+    maxPower: 9.9
+    maxPowerRpm: 7500
+    speed: 127
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: "https://www.honda2wheelersindia.com/BookNow?sp-160"
+    image: https://www.honda2wheelersindia.com/assets/images/sp160/gallery_sp160/22.png
+
+  - id: 9
+    name: "SP 160"
+    description: "The all-new Hornet 2.0 is all about letting people live their dream. The fierce machine keeps you ahead of others. It is a manifestation of style, safety and power. It turns heads and converts the road into a steady blur in seconds. It’s pure exhilaration at a flick of your wrist."
+    price: 154853
+    cc: 163
+    torque: 14.58
+    torqueRpm: 5500
+    maxPower: 9.9
+    maxPowerRpm: 7500
+    speed: 127
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: "https://www.honda2wheelersindia.com/BookNow?sp-160"
+    image: https://www.honda2wheelersindia.com/assets/images/sp160/gallery_sp160/22.png
+
+  - id: 9
+    name: "SP 160"
+    description: "The all-new Hornet 2.0 is all about letting people live their dream. The fierce machine keeps you ahead of others. It is a manifestation of style, safety and power. It turns heads and converts the road into a steady blur in seconds. It’s pure exhilaration at a flick of your wrist."
+    price: 154853
+    cc: 163
+    torque: 14.58
+    torqueRpm: 5500
+    maxPower: 9.9
+    maxPowerRpm: 7500
+    speed: 127
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: "https://www.honda2wheelersindia.com/BookNow?sp-160"
+    image: https://www.honda2wheelersindia.com/assets/images/sp160/gallery_sp160/22.png
+
+  - id: 9
+    name: "SP 160"
+    description: "The all-new Hornet 2.0 is all about letting people live their dream. The fierce machine keeps you ahead of others. It is a manifestation of style, safety and power. It turns heads and converts the road into a steady blur in seconds. It’s pure exhilaration at a flick of your wrist."
+    price: 154853
+    cc: 163
+    torque: 14.58
+    torqueRpm: 5500
+    maxPower: 9.9
+    maxPowerRpm: 7500
+    speed: 127
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: "https://www.honda2wheelersindia.com/BookNow?sp-160"
+    image: https://www.honda2wheelersindia.com/assets/images/sp160/gallery_sp160/22.png
+
+  - id: 9
+    name: "SP 160"
+    description: "The all-new Hornet 2.0 is all about letting people live their dream. The fierce machine keeps you ahead of others. It is a manifestation of style, safety and power. It turns heads and converts the road into a steady blur in seconds. It’s pure exhilaration at a flick of your wrist."
+    price: 154853
     cc: 163
     torque: 14.58
     torqueRpm: 5500

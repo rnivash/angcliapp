@@ -18,6 +18,10 @@ export class BikeListService {
     return (this.getVisibleBike() as Bike[]).sort((a, b) =>  a.price - b.price);
   }
 
+  public getBikesDesc(): IProduct[] {
+    return (this.getVisibleBike() as Bike[]).sort((a, b) =>  b.price - a.price);
+  }
+
   public getBikeById(id: number): IProduct {
     return (this.getVisibleBike() as Bike[])
     .find((product: Bike) => product.id === id) as IProduct;
