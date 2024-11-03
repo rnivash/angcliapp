@@ -1,0 +1,24 @@
+
+<div class="container">
+    <div class="row">
+        <h5 class="card-title mt-2">
+            Cubic Capacity
+            <a class="badge rounded-pill ms-2" 
+            [ngClass]="isLowToHigh? 'text-bg-light' : 'text-bg-info'"
+             [routerLink]="['/cc/desc/1']">High to Low</a>
+            <a class="badge rounded-pill ms-2" 
+            [ngClass]="isLowToHigh? 'text-bg-info': 'text-bg-light'" 
+            [routerLink]="['/cc/1']">Low to High</a>
+        </h5>
+    </div>
+    <div class="row">
+        <div *ngFor="let product of products" class="col-md-4" >
+            <app-product [item]="product"></app-product>
+        </div>
+    </div>
+    <div class="row p-2" *ngIf="products.length < allProducts.length">
+        <a class="btn btn-primary" [routerLink]="[loadMoreUrl, pageNo+1]">Show More..</a>
+    </div>
+</div>
+  
+  

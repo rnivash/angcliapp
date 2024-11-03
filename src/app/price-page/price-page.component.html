@@ -1,8 +1,10 @@
 
-<div class="container mt-5">
-    <div class="row mt-5">
-        <h5 class="card-title mt-5">Price<a class="badge rounded-pill text-bg-info ms-2" href="price/desc/1">High to Low</a>
-            <a class="badge rounded-pill text-bg-info ms-2" href="/price/1">Low to High</a>
+<div class="container">
+    <div class="row">
+        <h5 class="card-title mt-2">
+            Price
+            <a class="badge rounded-pill ms-2" [ngClass]="isLowToHigh? 'text-bg-light' : 'text-bg-info'" href="price/desc/1">High to Low</a>
+            <a class="badge rounded-pill ms-2" [ngClass]="isLowToHigh? 'text-bg-info': 'text-bg-light'" href="/price/1">Low to High</a>
         </h5>
     </div>
     <div class="row">
@@ -10,9 +12,8 @@
             <app-product [item]="product"></app-product>
         </div>
     </div>
-    <div class="row p-2">
-        <button class="btn btn-primary" (click)="loadMore()" 
-        *ngIf="products.length < allProducts.length">Show More..</button>
+    <div class="row p-2" *ngIf="products.length < allProducts.length">
+        <a class="btn btn-primary" [routerLink]="[loadMoreUrl, pageNo+1]">Show More..</a>
     </div>
 </div>
   

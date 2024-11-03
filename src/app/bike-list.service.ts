@@ -22,6 +22,22 @@ export class BikeListService {
     return (this.getVisibleBike() as Bike[]).sort((a, b) =>  b.price - a.price);
   }
 
+  public getBikesCcDesc(): IProduct[] {
+    return (this.getVisibleBike() as Bike[]).sort((a, b) =>  b.cc - a.cc);
+  }
+
+  public getBikesCc(): IProduct[] {
+    return (this.getVisibleBike() as Bike[]).sort((a, b) =>  a.cc - b.cc);
+  }
+
+  public getBikesPowerDesc(): IProduct[] {
+    return (this.getVisibleBike() as Bike[]).sort((a, b) =>  b.torque - a.torque);
+  }
+
+  public getBikesPower(): IProduct[] {
+    return (this.getVisibleBike() as Bike[]).sort((a, b) =>  a.torque - b.torque);
+  }
+
   public getBikeById(id: number): IProduct {
     return (this.getVisibleBike() as Bike[])
     .find((product: Bike) => product.id === id) as IProduct;

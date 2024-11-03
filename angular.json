@@ -140,7 +140,26 @@
           "builder": "@nguniversal/builders:prerender",
           "options": {
             "routes": [
-              "/price"
+              "/price/1",
+              "/price/2",
+              "/price/3",
+              "/price/desc/1",
+              "/price/desc/2",
+              "/price/desc/3",
+              "/power/1",
+              "/power/2",
+              "/power/3",
+              "/power/desc/1",
+              "/power/desc/2",
+              "/power/desc/3",
+              "/cc/1",
+              "/cc/2",
+              "/cc/3",
+              "/cc/desc/1",
+              "/cc/desc/2",
+              "/cc/desc/3",
+              "/about"
+
             ]
           },
           "configurations": {
