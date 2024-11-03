@@ -12,6 +12,7 @@ export class Bike implements IProduct {
     tankCapacity!: number;
     image!: string
     isHidden!: boolean;
+    buyUrl!: string;
 
     constructor(public id: number, public name: string, 
         public description: string) { 

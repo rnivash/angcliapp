@@ -10,15 +10,21 @@ export class BikeListService {
 
   constructor() { }
 
-  public getBikes(): IProduct[] {
+  private getVisibleBike(): IProduct[] {
     return productsData.products.filter((product: Bike) => !product.isHidden);
   }
 
+  public getBikes(): IProduct[] {
+    return (this.getVisibleBike() as Bike[]).sort((a, b) =>  a.price - b.price);
+  }
+
   public getBikeById(id: number): IProduct {
-    return productsData.products.find((product: Bike) => product.id === id) as IProduct;
+    return (this.getVisibleBike() as Bike[])
+    .find((product: Bike) => product.id === id) as IProduct;
   }
 
   public getBikeByName(name: string): IProduct {
-    return productsData.products.find((product: Bike) => product.name === name) as IProduct;
+    return (this.getVisibleBike() as Bike[])
+    .find((product: Bike) => product.name === name) as IProduct;
   }
 }

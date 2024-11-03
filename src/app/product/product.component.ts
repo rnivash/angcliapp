@@ -12,12 +12,21 @@ import { IProduct } from '../iproduct';
 })
 export class ProductComponent {
 
-  currentProduct!: Bike;
+  currentProduct!: Bike | undefined;
+
+  displayDesc: boolean = false;
   
   @Input()
   set item(bike: IProduct) {  
     this.currentProduct =  bike as Bike;
   }
+
+  @Input()
+  set showDesc(show: boolean) {  
+    this.displayDesc =  show;
+  }
+
+
 
 }
 

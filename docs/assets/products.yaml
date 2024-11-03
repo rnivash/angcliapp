@@ -12,6 +12,7 @@ products:
     gear: 4
     tankCapacity: 10
     isHidden: false
+    buyUrl: "https://www.tvsmotor.com/book-online/select-variant?tvs-sport"
     image: https://www.tvsmotor.com/tvs-sport/-/media/Brand-Pages-Webp/TVS-Sport/TVS-Sport-Starlight-Blue-700x500/11.png
 
   - id: 2
@@ -27,12 +28,13 @@ products:
     gear: 4
     tankCapacity: 10
     isHidden: false
+    buyUrl: "https://www.tvsmotor.com/book-online/select-variant?radeon"
     image: https://www.tvsmotor.com/tvs-radeon/-/media/Brand-Pages-Webp/Radeon/web/360/DIGI-Cluster/DT-Blue-Black/14.png
 
   - id: 3
     name: "Raider"
     description: "Go wicked with distinct sporty styling, best in class performance and high-tech advanced features"
-    price: 116156
+    price: 109559
     cc: 125
     torque: 11.2
     torqueRpm: 6000
@@ -42,4 +44,102 @@ products:
     gear: 5
     tankCapacity: 10
     isHidden: false
-    image: https://www.tvsmotor.com/tvs-raider/-/media/TVSv2/Brand-Pages/Raider2/360View/super-squad-edition/SSE/Black-panther/15.webp
+    buyUrl: "https://www.tvsmotor.com/book-online/select-variant?tvs-raider"
+    image: https://www.tvsmotor.com/tvs-raider/-/media/TVSv2/Brand-Pages/Raider2/360View/SmartXonnect/Yellow-SX/17.webp
+
+  - id: 4
+    name: "TVS Star City Plus"
+    description: "TVS Star City Plus is the only bike in the 110cc segment to have LED Tech Headlamp. It comes with a metallic bezel which enhances your style quotient and is energy efficient (3x more brightness with 67% less power consumption)"
+    price: 91649
+    cc: 110
+    torque: 8.7
+    torqueRpm: 4500
+    maxPower: 6.03
+    maxPowerRpm: 7350
+    speed: 90
+    gear: 4
+    tankCapacity: 10
+    isHidden: false
+    buyUrl: "https://www.tvsmotor.com/book-online/select-variant?tvs-star-city-plus"
+    image: https://www.tvsmotor.com/tvs-star-city-plus/-/media/Brand-Pages/TVSStarCity/Colour/Black-Red-Disc/11.png
+
+  - id: 5
+    name: "TVS Ronin"
+    description: "TVS Star City Plus is the only bike in the 110cc segment to have LED Tech Headlamp. It comes with a metallic bezel which enhances your style quotient and is energy efficient (3x more brightness with 67% less power consumption)"
+    price: 178626
+    cc: 226
+    torque: 19.93
+    torqueRpm: 3750
+    maxPower: 15.01 
+    maxPowerRpm: 7750
+    speed: 120
+    gear: 5
+    tankCapacity: 14
+    isHidden: false
+    buyUrl: "https://www.tvsmotor.com/book-online/select-variant?tvs-ronin"
+    image: https://www.tvsmotor.com/tvs-ronin/-/media/U368Media/Images/Compare/Variant/ronin-ss.png
+
+  - id: 6
+    name: "Apache RTR 160"
+    description: "For over ten years the TVS Apache RTR 160 has been a mainstay on the track, pushing the boundaries of performance"
+    price: 147240
+    cc: 160
+    torque: 13.85
+    torqueRpm: 7000
+    maxPower: 11.8
+    maxPowerRpm: 8750
+    speed: 107
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: "https://www.tvsmotor.com/book-online/select-variant?apache-rtr-160-2v"
+    image: https://www.tvsmotor.com/tvs-apache/-/media/Brand-Pages/Apache/Menu/large/RTR-160-2V.webp
+
+  - id: 7
+    name: "TVS Apache RTR 200 4V"
+    description: "For over ten years the TVS Apache RTR 160 has been a mainstay on the track, pushing the boundaries of performance"
+    price: 190571
+    cc: 198
+    torque: 17.25
+    torqueRpm: 7250
+    maxPower: 15.32
+    maxPowerRpm: 9000
+    speed: 127
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: "https://www.tvsmotor.com/book-online/select-variant?apache-rtr-200-4v"
+    image: https://www.tvsmotor.com/tvs-apache/-/media/Brand-Pages/Apache/Price/200-4V.png
+
+  - id: 8
+    name: "Hornet2-0"
+    description: "The all-new Hornet 2.0 is all about letting people live their dream. The fierce machine keeps you ahead of others. It is a manifestation of style, safety and power. It turns heads and converts the road into a steady blur in seconds. It’s pure exhilaration at a flick of your wrist."
+    price: 140451
+    cc: 185
+    torque: 15.9  
+    torqueRpm: 6000
+    maxPower: 12.7
+    maxPowerRpm: 8500
+    speed: 127
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: "https://www.honda2wheelersindia.com/BookNow?Hornet2-0"
+    image: https://www.honda2wheelersindia.com/assets/images/CBHornetBS_6/360/22.png
+
+  - id: 9
+    name: "SP160"
+    description: "The all-new Hornet 2.0 is all about letting people live their dream. The fierce machine keeps you ahead of others. It is a manifestation of style, safety and power. It turns heads and converts the road into a steady blur in seconds. It’s pure exhilaration at a flick of your wrist."
+    price: 123351
+    cc: 163
+    torque: 14.58
+    torqueRpm: 5500
+    maxPower: 9.9
+    maxPowerRpm: 7500
+    speed: 127
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: "https://www.honda2wheelersindia.com/BookNow?sp-160"
+    image: https://www.honda2wheelersindia.com/assets/images/sp160/gallery_sp160/22.png
+    

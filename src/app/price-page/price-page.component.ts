@@ -13,14 +13,18 @@ import { ProductComponent } from '../product/product.component';
 })
 export class PricePageComponent {
 
-  products : IProduct[] = [];
+  products: IProduct[] = [];
+  allProducts: IProduct[] = [];
+  productsToShow: number = 6;
 
   constructor(private bikeListService: BikeListService) {
-    this.products = this.bikeListService.getBikes();
+    this.allProducts = this.bikeListService.getBikes();
+    this.products = this.allProducts.slice(0, this.productsToShow);
   }
 
   loadMore(): void {
-    this.products = this.products.concat(this.bikeListService.getBikes());    
+    const nextProducts = this.allProducts.slice(this.products.length, this.products.length + this.productsToShow);
+    this.products = this.products.concat(nextProducts);  
   }
 
 
