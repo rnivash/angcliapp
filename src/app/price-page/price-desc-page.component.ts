@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductComponent } from '../product/product.component';
-import { BikeListService } from '../bike-list.service';
+import { BikeListService } from '../shared/bike-list.service';
 import { Router, RouterModule } from '@angular/router';
-import { IProduct } from '../iproduct';
+import { IProduct } from '../shared/iproduct';
 
 @Component({
   selector: 'app-price-desc-page',

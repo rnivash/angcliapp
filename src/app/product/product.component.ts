@@ -1,7 +1,7 @@
 import { CommonModule, CurrencyPipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Bike } from '../bike';
-import { IProduct } from '../iproduct';
+import { Bike } from '../shared/bike';
+import { IProduct } from '../shared/iproduct';
 
 @Component({
   selector: 'app-product',

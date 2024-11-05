@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Bike } from '../bike';
+import { Bike } from '../shared/bike';
 import { ProductComponent } from '../product/product.component';
-import { BikeListService } from '../bike-list.service';
+import { BikeListService } from '../shared/bike-list.service';
 
 @Component({
   selector: 'app-product-page',

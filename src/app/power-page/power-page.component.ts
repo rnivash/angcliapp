@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IProduct } from '../iproduct';
-import { BikeListService } from '../bike-list.service';
+import { IProduct } from '../shared/iproduct';
+import { BikeListService } from '../shared/bike-list.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ProductComponent } from '../product/product.component';
 
