@@ -2,17 +2,19 @@ import { CommonModule, CurrencyPipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Bike } from '../shared/bike';
 import { IProduct } from '../shared/iproduct';
+import { ProductImageComponent } from '../product-image/product-image.component';
+import { ProductContentComponent } from "../product-content/product-content.component";
 
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [CommonModule, CurrencyPipe],
+  imports: [CommonModule, CurrencyPipe, ProductImageComponent, ProductContentComponent],
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent {
 
-  currentProduct!: Bike | undefined;
+  currentProduct!: Bike;
 
   displayDesc: boolean = false;
   

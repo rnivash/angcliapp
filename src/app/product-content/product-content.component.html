@@ -1,0 +1,18 @@
+<div class="card-body text-bg-success">
+    <h5 class="card-title">{{ currentProduct?.name }}</h5>
+    <p class="card-text" *ngIf="showDescription">{{ currentProduct?.description }}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Price: <span class="fw-medium text-danger">{{ currentProduct?.price | currency: "INR": 'symbol':'1.0-0' }}</span></li>
+    <li class="list-group-item">Displacement: <span class="fw-medium text-danger">{{ currentProduct?.cc }} CC</span></li>
+    <li class="list-group-item">Torque <span class="fw-medium text-danger">{{ currentProduct?.torque }} Nm</span> &#64; 
+      <span class="fw-medium text-danger">{{ currentProduct?.torqueRpm }} RPM</span></li>
+    <li class="list-group-item">Power <span class="fw-medium text-danger">{{ currentProduct?.maxPower }} kW</span> &#64;
+      <span class="fw-medium text-danger">{{ currentProduct?.maxPowerRpm }} RPM</span></li>
+    <li class="list-group-item">Speed <span class="fw-medium text-danger">{{ currentProduct?.speed }} kmph</span></li>
+    <li class="list-group-item">No. of Gear: <span class="fw-medium text-danger">{{ currentProduct?.gear }}</span></li>
+    <li class="list-group-item">Tank Capacity: <span class="fw-medium text-danger">{{ currentProduct?.tankCapacity }} liters</span></li>
+  </ul>
+  <div class="card-body text-center">
+    <a href="{{ currentProduct?.buyUrl }}" class="btn btn-success">Buy Now</a>
+  </div>

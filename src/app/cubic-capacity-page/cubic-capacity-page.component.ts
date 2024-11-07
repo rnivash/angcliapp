@@ -35,6 +35,7 @@ export class CubicCapacityPageComponent {
       this.allProducts = ccUrl.includes("/desc") ? 
       this.bikeListService.getBikesCcDesc() : this.bikeListService.getBikesCc();
       this.loadMoreUrl = ccUrl.includes("/desc") ? '/cc/desc': '/cc';
+      this.isLowToHigh = !ccUrl.includes("/desc");
     });
   }
 

@@ -35,6 +35,7 @@ export class PowerPageComponent {
       this.allProducts = ccUrl.includes("/desc") ? 
       this.bikeListService.getBikesPowerDesc() : this.bikeListService.getBikesPower();
       this.loadMoreUrl = ccUrl.includes("/desc") ? '/power/desc': '/power';
+      this.isLowToHigh = !ccUrl.includes("/desc");
     });
   }
 

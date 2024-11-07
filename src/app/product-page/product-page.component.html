@@ -2,7 +2,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 mt-2">
-            <app-product [item]="currentProduct" [showDesc]="true"></app-product>
+            <a href="/product/{{ currentProduct?.name }}">
+                <img [src]="currentProduct?.image" class="card-img-top text-bg-light" alt="{{ currentProduct?.name }}">
+            </a>
+        </div>
+        <div class="col-md-6 mt-2">
+            <app-product-content [item]="currentProduct" [showDesc]="true"></app-product-content>
         </div>
     </div>
 </div>
