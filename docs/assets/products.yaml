@@ -13,7 +13,7 @@ products:
     tankCapacity: 10
     isHidden: false
     buyUrl: "https://www.tvsmotor.com/book-online/select-variant?tvs-sport"
-    image: https://www.tvsmotor.com/tvs-sport/-/media/Brand-Pages-Webp/TVS-Sport/TVS-Sport-Starlight-Blue-700x500/11.png
+    image: https://www.tvsmotor.com/tvs-sport/-/media/Brand-Pages-Webp/Sport-optimised-image-700x500/900x500_Black/12.png
 
   - id: 2
     name: "Radeon"
@@ -29,7 +29,7 @@ products:
     tankCapacity: 10
     isHidden: false
     buyUrl: "https://www.tvsmotor.com/book-online/select-variant?radeon"
-    image: https://www.tvsmotor.com/tvs-radeon/-/media/Brand-Pages-Webp/Radeon/web/360/DIGI-Cluster/DT-Blue-Black/14.png
+    image: https://www.tvsmotor.com/tvs-radeon/-/media/Brand-Pages-Webp/Radeon/web/360/DIGI-Cluster/DT-Blue-Black/16.png
 
   - id: 3
     name: "Raider"
@@ -45,7 +45,7 @@ products:
     tankCapacity: 10
     isHidden: false
     buyUrl: "https://www.tvsmotor.com/book-online/select-variant?tvs-raider"
-    image: https://www.tvsmotor.com/tvs-raider/-/media/TVSv2/Brand-Pages/Raider2/360View/SmartXonnect/Yellow-SX/17.webp
+    image: https://www.tvsmotor.com/tvs-raider/-/media/TVSv2/Brand-Pages/Raider2/360View/SmartXonnect/Yellow-SX/19.webp
 
   - id: 4
     name: "TVS Star City Plus"
@@ -61,7 +61,7 @@ products:
     tankCapacity: 10
     isHidden: false
     buyUrl: "https://www.tvsmotor.com/book-online/select-variant?tvs-star-city-plus"
-    image: https://www.tvsmotor.com/tvs-star-city-plus/-/media/Brand-Pages/TVSStarCity/Colour/Black-Red-Disc/11.png
+    image: https://www.tvsmotor.com/tvs-star-city-plus/-/media/Brand-Pages/TVSStarCity/Colour/Black-Red-Disc/12.png
 
   - id: 5
     name: "TVS Ronin"
@@ -77,7 +77,7 @@ products:
     tankCapacity: 14
     isHidden: false
     buyUrl: "https://www.tvsmotor.com/book-online/select-variant?tvs-ronin"
-    image: https://www.tvsmotor.com/tvs-ronin/-/media/U368Media/Images/Compare/Variant/ronin-ss.png
+    image: https://www.tvsmotor.com/tvs-ronin/-/media/U368Media/Images/LandingPage/Configurator/configurator-bike.png?la=en&h=448&w=749&hash=D858C19D82782BF8B6AA9F29553CAF53
 
   - id: 6
     name: "Apache RTR 160"
@@ -93,7 +93,7 @@ products:
     tankCapacity: 12
     isHidden: false
     buyUrl: "https://www.tvsmotor.com/book-online/select-variant?apache-rtr-160-2v"
-    image: https://www.tvsmotor.com/tvs-apache/-/media/Brand-Pages/Apache/Menu/large/RTR-160-2V.webp
+    image: https://www.tvsmotor.com/tvs-apache/-/media/apache_160_2v_new_addition/price_desktop_new.webp
 
   - id: 7
     name: "TVS Apache RTR 200 4V"
@@ -109,7 +109,7 @@ products:
     tankCapacity: 12
     isHidden: false
     buyUrl: "https://www.tvsmotor.com/book-online/select-variant?apache-rtr-200-4v"
-    image: https://www.tvsmotor.com/tvs-apache/-/media/Brand-Pages/Apache/Price/200-4V.png
+    image: https://www.tvsmotor.com/tvs-apache/-/media/Brand-Pages/Apache/Apache-RTR/APACHE-RTR-200-4V-1Ch-ABS/Concept/webp-images/Apache-200-4V--Profile-Shot---977-x-644-Pix.webp
 
   - id: 8
     name: "Hornet 2"
@@ -125,7 +125,7 @@ products:
     tankCapacity: 12
     isHidden: false
     buyUrl: "https://www.honda2wheelersindia.com/BookNow?Hornet2-0"
-    image: https://www.honda2wheelersindia.com/assets/images/CBHornetBS_6/360/22.png
+    image: https://www.honda2wheelersindia.com/assets/images/CBHornetBS_6/360/24.png
 
   - id: 9
     name: "SP 160"
@@ -136,9 +136,121 @@ products:
     torqueRpm: 5500
     maxPower: 9.9
     maxPowerRpm: 7500
-    speed: 127
+    speed: 110
     gear: 5
     tankCapacity: 12
     isHidden: false
     buyUrl: "https://www.honda2wheelersindia.com/BookNow?sp-160"
-    image: https://www.honda2wheelersindia.com/assets/images/sp160/gallery_sp160/22.png
+    image: https://www.honda2wheelersindia.com/assets/images/sp160/gallery_sp160/24.png
+
+  - id: 10
+    name: "Triumph Speed 400"
+    description: "Born into a peerless bloodline, the Speed 400 has Triumph’s unique Modern Classic roadster design in its DNA."
+    price: 292931
+    cc: 399
+    torque: 37.5
+    torqueRpm: 6500
+    maxPower: 29.4
+    maxPowerRpm: 8000
+    speed: 160
+    gear: 6
+    tankCapacity: 13
+    isHidden: false
+    buyUrl: "https://www.triumphmotorcyclesindia.com/booking/speed-400"
+    image: https://www.triumphmotorcyclesindia.com/images/404/bike-img.png
+
+  - id: 11
+    name: "Bajaj Pulsar 150"
+    description: "The bike now comes with striking new graphics, carbon fibre accents and iconic wolf-eyed headlamps. Everything on this icon gets noticed! "
+    price: 138125
+    cc: 150
+    torque: 13.25
+    torqueRpm: 6500
+    maxPower: 10.3
+    maxPowerRpm: 8500
+    speed: 110
+    gear: 4
+    tankCapacity: 15
+    isHidden: false
+    buyUrl: "https://www.bajajauto.com/bikes/pulsar/pulsar-150"
+    image: https://cdn.bajajauto.com/-/media/assets/bajajauto/bikes/pulsar-150-2024/150-feat/safe-d.png
+
+  - id: 12
+    name: "Bajaj Pulsar 220F"
+    description: "The bike now comes with striking new graphics, carbon fibre accents and iconic wolf-eyed headlamps. Everything on this icon gets noticed! "
+    price: 171840
+    cc: 220
+    torque: 18.55
+    torqueRpm: 7000
+    maxPower: 15
+    maxPowerRpm: 8500
+    speed: 134
+    gear: 5
+    tankCapacity: 15
+    isHidden: false
+    buyUrl: "https://www.bajajauto.com/bikes/pulsar/pulsar-220f"
+    image: https://cdn.bajajauto.com/-/media/assets/bajajauto/bikes/pulsar-220f-2024/360-degree/web/blue/00.png
+
+  - id: 13
+    name: "Bajaj Platina 100"
+    description: "The powerful DTS-i engine is designed to deliver unmatched performance and superior mileage. "
+    price: 80657
+    cc: 102
+    torque: 8.3
+    torqueRpm: 5500
+    maxPower: 5.8
+    maxPowerRpm: 7500
+    speed: 90
+    gear: 4
+    tankCapacity: 11
+    isHidden: false
+    buyUrl: "https://www.bajajauto.com/bikes/platina/platina-100"
+    image: https://cdn.bajajauto.com/-/media/assets/bajajauto/360degreeimages/bikes/platina/platina-100es-ebony-black-red/00.png
+
+  - id: 14
+    name: "Yamaha FZ FI"
+    description: "The powerful DTS-i engine is designed to deliver unmatched performance and superior mileage. "
+    price: 132820
+    cc: 149
+    torque: 13.3
+    torqueRpm: 5500
+    maxPower: 9.1 
+    maxPowerRpm: 7250
+    speed: 115
+    gear: 5
+    tankCapacity: 13
+    isHidden: false
+    buyUrl: "https://shop.yamaha-motor-india.com/products/fz-fi-new-1"
+    image: https://www.yamaha-motor-india.com/theme/v4/images/webp_images/fz_series_all/fz-fi/color/cyan.webp
+
+  - id: 15
+    name: "Splendor Plus"
+    description: "The powerful DTS-i engine is designed to deliver unmatched performance and superior mileage. "
+    price: 89201
+    cc: 98
+    torque: 8.05
+    torqueRpm: 6000
+    maxPower: 5.9
+    maxPowerRpm: 8000
+    speed: 90
+    gear: 4
+    tankCapacity: 9.8
+    isHidden: false
+    buyUrl: "https://www.heromotocorp.com/en-in/motorcycles/practical/splendor-plus.html"
+    image: https://www.heromotocorp.com/content/dam/hero-commerce/in/en/products/practical/splendor-plus/HSPPPDRSCFIRPB/360/1.png
+
+  - id: 16
+    name: "HF 100"
+    description: "The powerful DTS-i engine is designed to deliver unmatched performance and superior mileage. "
+    price: 58999
+    cc: 98
+    torque: 8.05
+    torqueRpm: 6000
+    maxPower: 5.9
+    maxPowerRpm: 8000
+    speed: 85
+    gear: 4
+    tankCapacity: 9.1
+    isHidden: false
+    buyUrl: https://www.heromotocorp.com/en-in/motorcycles/practical/hf-100.html
+    image: https://www.heromotocorp.com/content/dam/hero-commerce/in/en/products/practical/hf-100/HHNDJDRKCFIRBK/360/1.png
