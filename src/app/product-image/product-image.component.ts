@@ -12,7 +12,7 @@ import { IProduct } from '../shared/iproduct';
 })
 export class ProductImageComponent {
 
-  currentProduct!: Bike | undefined;
+  currentProduct!: Bike | any;
 
   @Input()
   set item(bike: IProduct) {  

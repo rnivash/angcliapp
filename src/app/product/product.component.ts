@@ -14,7 +14,7 @@ import { ProductContentComponent } from "../product-content/product-content.comp
 })
 export class ProductComponent {
 
-  currentProduct!: Bike;
+  currentProduct!: Bike | any;
 
   displayDesc: boolean = false;
   

@@ -11,7 +11,7 @@ import { Bike } from '../shared/bike';
   styleUrls: ['./product-content.component.scss']
 })
 export class ProductContentComponent {
-  currentProduct!: Bike;
+  currentProduct!: Bike | any;
   showDescription: boolean = false;
 
   @Input()
