@@ -1,8 +1,10 @@
 <div class="container">
     <div class="row">
         <h5 class="card-title mt-2">
-            <a class="badge rounded-pill ms-2" [ngClass]="isLowToHigh? 'text-bg-light' : 'text-bg-info'" href="price/desc/1">High to Low</a>
-            <a class="badge rounded-pill ms-2" [ngClass]="isLowToHigh? 'text-bg-info': 'text-bg-light'" href="/price/1">Low to High</a>
+            <a class="badge rounded-pill ms-2" [ngClass]="isLowToHigh? 'text-bg-light' : 'text-bg-info'" 
+            [routerLink]="['/price/desc', 1]">High to Low</a>
+            <a class="badge rounded-pill ms-2" [ngClass]="isLowToHigh? 'text-bg-info': 'text-bg-light'" 
+            [routerLink]="['/price', 1]">Low to High</a>
         </h5>
     </div>
     <div class="row">
