@@ -1,26 +1,32 @@
-<nav class="navbar">
+  <header class="p-3 mb-3 border-bottom sticky-top text-bg-light">
     <div class="container">
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <span>
-            <a class="nav-link" aria-current="page" [routerLink]="['/price']">Ootru</a>
-          </span>
-        </li>
-        <li class="nav-item">
-          <span>
-            <a class="nav-link" [routerLink]="['/power/desc/1']">Power</a>
-          </span>
-        </li>
-        <li class="nav-item">
-          <span>
-            <a class="nav-link" [routerLink]="['/cc/desc/1']">CC</a>
-          </span>
-        </li>
-        <li class="nav-item">
-          <span>
-            <a class="nav-link" [routerLink]="['/about']">About</a>
-          </span>
-        </li>
-      </ul>
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="70" height="45" viewBox="40 0 118 94">
+            <!-- Circular Wheel Icons -->
+            <circle cx="50" cy="60" r="19" stroke="#000" stroke-width="2.5" fill="#4CAF50" />
+            <circle cx="120" cy="60" r="15" stroke="#000" stroke-width="2.5" fill="#4CAF50" />
+            
+            <!-- Frame/Body of Two-Wheeler -->
+            <line x1="50" y1="60" x2="90" y2="40" stroke="#000" stroke-width="2.5" />
+            <line x1="90" y1="40" x2="120" y2="60" stroke="#000" stroke-width="2.5" />
+            <line x1="90" y1="40" x2="100" y2="20" stroke="#000" stroke-width="2.5" />
+            <circle cx="100" cy="20" r="4" fill="#000" />
+            
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a [routerLink]="['/price']" class="nav-link px-2 link-secondary">Price</a></li>
+          <li><a [routerLink]="['/power/desc/1']" class="nav-link px-2 link-body-emphasis">Power</a></li>
+          <li><a [routerLink]="['/cc/desc/1']" class="nav-link px-2 link-body-emphasis">CC</a></li>
+          <li><a [routerLink]="['/about']" class="nav-link px-2 link-body-emphasis">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+        
+      </div>
     </div>
-  </nav>
+  </header>

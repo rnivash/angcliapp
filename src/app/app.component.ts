@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
+import { Meta } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-root',
@@ -11,5 +13,12 @@ import { NavigationComponent } from './navigation/navigation.component';
 })
 
 export class appComponent {
+
+  constructor(private meta: Meta) {
+    this.meta.addTag({ 
+      name: 'description', 
+      content: 'Discover top two-wheeler models, detailed specs, and comparisons. Find the perfect bike for your lifestyle, from commuter bikes to high-performance rides' });
+  }
+  
   
 }

@@ -254,3 +254,83 @@ products:
     isHidden: false
     buyUrl: https://www.heromotocorp.com/en-in/motorcycles/practical/hf-100.html
     image: https://www.heromotocorp.com/content/dam/hero-commerce/in/en/products/practical/hf-100/HHNDJDRKCFIRBK/360/1.png
+
+  - id: 17
+    name: "Xtreme 125R"
+    description: "Single-channel ABS, LED lights, lightweight chassis"
+    price: 132602
+    cc: 125
+    torque: 10.5
+    torqueRpm: 6500
+    maxPower: 11.4
+    maxPowerRpm: 8250
+    speed: 100
+    gear: 5
+    tankCapacity: 10
+    isHidden: false
+    buyUrl: https://www.heromotocorp.com/en-in/motorcycles/performance/xtreme-125r.html
+    image: https://www.heromotocorp.com/content/dam/hero-commerce/in/en/products/performance/content-fragments/xtreme-125r/assets/redesign/Xtreme-125R-Full-Web-2x.png
+
+  - id: 18
+    name: "Hero Xtreme 160R"
+    description: "Full-LED setup, hazard lights, sporty design"
+    price: 128374
+    cc: 164
+    torque: 14.6
+    torqueRpm: 6500
+    maxPower: 14.79
+    maxPowerRpm: 8500
+    speed: 115
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: https://www.heromotocorp.com/en-in/motorcycles/performance/xtreme-160r.html
+    image: https://www.heromotocorp.com/content/dam/hero-commerce/in/en/products/performance/xtreme-160r/HXTRWDSSCFIMGB/360/1.png
+
+  - id: 19
+    name: "Xtreme 200S 4V"
+    description: "Tubeless tyres, 4V engine, sporty design"
+    price: 143442
+    cc: 200
+    torque: 16.9
+    torqueRpm: 8500
+    maxPower: 16.6
+    maxPowerRpm: 8500
+    speed: 130
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: https://www.heromotocorp.com/en-in/motorcycles/performance/xtreme-200s-4v.html
+    image: https://www.heromotocorp.com/content/dam/hero-commerce/in/en/products/performance/xtreme-200s-4v/HEXTDADSCFIPBK/360/1.png
+
+  - id: 20
+    name: "Hero Xtreme 160R 4V"
+    description: "High ground clearance, powerful engine"
+    price: 160924
+    cc: 164
+    torque: 14.6
+    torqueRpm: 6500
+    maxPower: 16.9
+    maxPowerRpm: 8500
+    speed: 140
+    gear: 5
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: https://www.heromotocorp.com/en-in/motorcycles/performance/xtreme-160r-4v.html
+    image: https://www.heromotocorp.com/content/dam/hero-commerce/in/en/products/performance/xtreme-160r-4v/HXTMEPDSCFIABM/360/1.png
+
+  - id: 21
+    name: "Karizma XMR 210"
+    description: "Advanced features, sporty design"
+    price: 228775
+    cc: 210
+    torque: 20.4
+    torqueRpm: 7250
+    maxPower: 25.5
+    maxPowerRpm: 9250
+    speed: 135
+    gear: 6
+    tankCapacity: 12
+    isHidden: false
+    buyUrl: https://www.heromotocorp.com/en-in/motorcycles/practical/hf-100.html
+    image: https://www.heromotocorp.com/content/dam/hero-aem-website/in/en-in/premia/acaa/product-detail/360/360-images/yellow-2/01.png
